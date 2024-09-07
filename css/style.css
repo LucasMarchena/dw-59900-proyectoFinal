@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*FORMATEO DEL DOC*/
 * {
   padding: 0;
@@ -33,6 +34,7 @@ ul, li {
   height: 50px;
 }
 
+/*ESTILOS DEL MAIN*/
 body {
   max-width: 1920px;
   background: #262626;
@@ -46,7 +48,6 @@ body {
   margin-top: 60px;
 }
 
-/*ESTILOS DEL MAIN*/
 #main-form {
   display: flex;
   flex-direction: column;
@@ -69,15 +70,67 @@ body {
   margin-left: 35%;
 }
 
-#noticias-imagenes {
+#conocenos-imagenes {
   margin: 0 auto;
   padding-top: 100px;
   width: 800px;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "ceo-de-intel" "" "" "";
+  grid-template-areas: "noticia-2 noticia-2 noticia-2 noticia-2" "ceo-intel fabrica . noticia-1" "sede trabajadores-2 trabajadores noticia-1";
+}
+
+.img1 {
+  grid-area: ceo-intel;
+  width: 400px;
+}
+
+.img2 {
+  grid-area: noticia-1;
+  width: 400px;
+  height: 200px;
+}
+
+.img3 {
+  grid-area: noticia-2;
+  width: 1000px;
+  height: 300px;
+}
+
+.img4 {
+  grid-area: trabajadores;
+  width: 400px;
+}
+
+.img5 {
+  grid-area: fabrica;
+  width: 400px;
+}
+
+.img6 {
+  grid-area: trabajadores-2;
+  width: 400px;
+}
+
+.img7 {
+  grid-area: sede;
+  width: 400px;
+}
+
+.btn-group-vertical {
+  position: absolute;
+  bottom: 400px; /* Mueve el botón hacia arriba x cant de px desde la parte superior del contenedor */
+  left: 900px; /* Mueve el botón hacia la derecha x cant de px desde la parte izquierda del contenedor */
+}
+
+.conocenos-section-text h4 {
+  text-align: center;
+}
+
+.conocenos-section-text p {
+  text-align: center;
 }
 
 #main h1 {
@@ -91,6 +144,10 @@ body {
 .main-video-article video {
   width: 100%;
   height: 700px;
+}
+
+.gen-main-section ul li {
+  margin: 0px 35px 0px 35px;
 }
 
 /*ESTILOS FOOTER*/
