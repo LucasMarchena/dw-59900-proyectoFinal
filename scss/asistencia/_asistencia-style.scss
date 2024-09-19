@@ -1,0 +1,45 @@
+$primary-color: #0d6efd;
+$border-radius: 0.375rem; // 6px
+
+.container-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Estilo de la tarjeta que contiene el formulario
+    .card {
+      max-width: 500px;
+      width: 100%;
+      padding: 1.5rem; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);        
+      border-radius: $border-radius;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem; 
+        }
+
+        // Estilos del formulario
+        form {
+          .form-control {
+            border-radius: $border-radius;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+        }
+
+          .btn {
+            background-color: $primary-color;
+            width: 100%; 
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: $border-radius;
+              &:hover {
+                background-color: darken($primary-color, 10%)
+            }
+        }
+        }
+    }
+}
+
+

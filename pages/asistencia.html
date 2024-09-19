@@ -57,46 +57,89 @@
         </header>
 
         <main id="main">
-        
-            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                <div class="btn-group dropend btn-lg" role="group">
-                    <button type="button" class="btn btn-primary dropdown-toggle asistencia-botonera" data-bs-toggle="dropdown" aria-expanded="false">
-                    REPARACION DE HARDWARE
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ver mi presupuesto</a></li>
-                    <li><a class="dropdown-item" href="#">Que hardware tengo?</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group dropend btn-lg" role="group">
-                    <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-                    REEMBOLSOS
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Pedir reembolso de mi compra</a></li>
-                    <li><a class="dropdown-item" href="#">Historial</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group dropend btn-lg" role="group">
-                    <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-                    DRIVERS Y DESCARGAS
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Actualizar drivers</a></li>
-                    <li><a class="dropdown-item" href="#">Mis descargas</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group dropend btn-lg" role="group">
-                    <button type="button" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-                    GARANTIAS
-                    </button>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mas informacion sobre garantias</a></li>
-                    <li><a class="dropdown-item" href="#">Ver mi garantia</a></li>
-                    </ul>
-                </div>
-            </div>  
+            <div class="container my-5">
 
+                <div class="accordion" id="faqAccordion">
+                    <h2>Preguntas Frecuentes (FAQ)</h2>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cómo saber si un procesador Intel es compatible con mi placa base?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Para verificar la compatibilidad de un procesador Intel con tu placa base, debes consultar el socket y chipset de la placa en las especificaciones del fabricante.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Cuál es la política de garantía para los productos Intel?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            La mayoría de los procesadores Intel tienen una garantía limitada de 3 años. Te recomendamos consultar los detalles en la página oficial de Intel.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cómo puedo obtener soporte técnico para mi procesador Intel?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            El soporte técnico se puede obtener a través del centro de asistencia oficial de Intel, donde podrás hacer preguntas, obtener controladores y mucho más.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="mb-4">
+                <h2>Servicios de Asistencia</h2>
+                <p>Selecciona una opción para obtener más detalles sobre nuestros servicios:</p>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#drivers" aria-expanded="false" aria-controls="drivers">Instalación de Drivers</button>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reembolsos" aria-expanded="false" aria-controls="reembolsos">Reembolsos</button>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#hardware" aria-expanded="false" aria-controls="hardware">Reparación de Hardware</button>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#garantias" aria-expanded="false" aria-controls="garantias">Garantías</button>
+                </div>
+            </div>
+
+            <div class="collapse" id="drivers">
+                <div class="card card-body">
+                    <h5>Instalación de Drivers</h5>
+                    <p>Ofrecemos asistencia para la instalación de drivers oficiales para los componentes Intel. Puedes descargar los controladores desde la página oficial de Intel o contactar con nuestro equipo de soporte para obtener ayuda personalizada.</p>
+                </div>
+            </div>
+        
+            <div class="collapse" id="reembolsos">
+                <div class="card card-body">
+                    <h5>Reembolsos</h5>
+                    <p>Los reembolsos pueden ser solicitados dentro de los 30 días posteriores a la compra si el producto no ha sido abierto ni utilizado. Para solicitar un reembolso, por favor, contacta a nuestro servicio de atención al cliente con tu comprobante de compra.</p>
+                </div>
+            </div>
+        
+            <div class="collapse" id="hardware">
+                <div class="card card-body">
+                    <h5>Reparación de Hardware</h5>
+                    <p>Si tu producto Intel presenta problemas de hardware, ofrecemos un servicio de reparación a través de nuestros técnicos certificados. Puedes iniciar una solicitud de reparación y recibir asistencia directa con el proceso.</p>
+                </div>
+            </div>
+        
+            <div class="collapse" id="garantias">
+                <div class="card card-body">
+                    <h5>Garantías</h5>
+                    <p>Todos los procesadores y componentes Intel cuentan con una garantía limitada de 3 años. Para hacer uso de la garantía, asegúrate de tener el comprobante de compra y contacta con nuestro equipo de soporte para iniciar el proceso.</p>
+                </div>
+            </div>
         </main>
 
         <footer id="footer">

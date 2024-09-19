@@ -3,37 +3,43 @@
 @import "formatos/breakpoint";
 //estilos html
 @import "formatos/header";
-@import "formatos/body-main";
+@import "formatos/body-main"; 
 @import "formatos/footer";
-//page generaciones
 
-//page noticias
-
-//page asistencia
-
-//page contacto
-
+@import "index-style";
+@import "asistencia/asistencia-style";
+@import "conocenos/conocenos-style";
+@import "generaciones/generaciones-style";
+@import "contacto/contacto-style";
 
 /*FORMATEO DEL DOC*/
-*{
+// Variables para colores o configuraciones comunes
+$max-width: 1920px;
+$background-color: #262626;
+$background-image: "../images/background.jpg";
+
+// Reset general para todos los elementos
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-style: none;
     text-decoration: none;
-    
 }
 
-ul , li{
+// Estilos para listas
+ul, li {
     list-style: none;
     display: inline-block;
 }
-body{
-    max-width: 1920px;
-    background: #262626;
+
+// Estilos para el body
+body {
+    max-width: $max-width;
+    background: $background-color;
     display: flex;
     flex-direction: column;
-    background-image:url("../images/background.jpg") ;
+    background-image: url($background-image);
 }
 
 #main{
@@ -80,22 +86,6 @@ body{
 
 .main-conteiner{
     margin-left: 35%;
-}
-
-#noticias-imagenes{
-    margin: 0 auto;
-    padding-top: 100px;
-    width: 800px;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-    /*FILA1*/"ceo-de-intel"
-    /*FILA1*/""
-    /*FILA1*/""
-    /*FILA1*/""
-    ;
 }
 
 #main h1{

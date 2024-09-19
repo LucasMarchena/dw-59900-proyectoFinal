@@ -1,32 +1,41 @@
 /*ESTILOS FOOTER*/
 #footer {
-    width: 100%;
-    margin-top: auto;
-    height: auto;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-    margin-top: auto;
-  }
-  
-  .footer-logo img {
-    width: 90px;
-  }
-  
-  .footer-links ul {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-redes a:hover {
-    display: inline-block;
-    transition: transform 0.3s ease;
-    transform: scale(1.2);
-  }
-  
-  .footer-redes-instagram, .footer-redes-youtube, .footer-redes-x, .footer-redes-facebook {
-    font-size: 25px;
-    padding: 0 5px 0 5px;
-  }
+  width: 100%;
+  margin-top: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-top: auto;
+
+    .footer-logo {
+      img {
+        width: 90px;
+      }
+    }
+
+    .footer-links {
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .footer-redes {
+      a:hover {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        transform: scale(1.2);
+      }
+    }
+
+    .footer-redes-instagram,
+    .footer-redes-youtube,
+    .footer-redes-x,
+    .footer-redes-facebook {
+      font-size: 25px;
+      padding: 0 5px;
+    }
+}
