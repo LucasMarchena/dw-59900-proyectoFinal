@@ -34,6 +34,11 @@ ul, li {
   height: 50px;
 }
 
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
 /*ESTILOS DEL MAIN*/
 body {
   max-width: 1920px;
